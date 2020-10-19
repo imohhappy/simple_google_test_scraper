@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+<body>
+
+<div class="container" >
+    <div class="navbar" style="margin-top: 20px; background-color: skyblue; border-radius: 40px; height: 50px">
+        <div>
+            <img  src="{% static 'image/logo.jpg' %}" style="height:50px;margin-left:-100px; width:50px; margin-top:-10px; border-radius:20px">
+        </div>
+        <div style="display: flex; justify-content:space-around; margin-left: -300px">
+
+        <h5 style=""><a href="/" style="color:black">Home</a> </h5>
+        <h5 style="margin-left:20px"><a href="/about" style="color:black">About</a> </h5>
+            <h5 style="margin-left:20px"><a href="/phones" style="color:black">Phones</a> </h5>
+                <h5 style="margin-left:20px"><a href="/electronics" style="color:black">Electonics</a> </h5>
+        </div>
+        <div style="margin-top:-17px">
+            <a href="/create" ><input type="button" value="Create Account"style="border-radius: 50px; margin-top:10px;text-align: center;margin-left:20px; width:200px;" class="btn btn-danger"> </a>
+             <a href="/login" ><input type="button" value="Login"style="border-radius: 50px; margin-top:10px; text-align: center;margin-left:20px; width:150px" class="btn btn-danger"> </a>
+
+    </div>
+
+    {% block content %} {% endblock %}
+</div>
+</div>
+</body>
+</html>

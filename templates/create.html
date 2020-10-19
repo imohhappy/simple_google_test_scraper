@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" action="/">
+    {% csrf_token%}
+   <h5 class="card" style="background-color:cyan;width:30rem;height:10rem;margin-left:400px; margin-top:50px">
+    {{form.as_p}}
+       </h5>
+
+   <center><a href="/" style=" margin-top:-50px">SIGN IN</a>
+
+
+       </center>
+</form>
+</body>
+</html>
