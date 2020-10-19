@@ -26,7 +26,7 @@ SECRET_KEY = '7f+=btrbl6jx0e0%me^8p25d0&==fd53-#gbc)7m*+jke7zx=&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['toppout.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['tinot.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
